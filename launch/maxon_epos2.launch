@@ -1,0 +1,9 @@
+<launch>
+
+  <!-- Start a node for each axis, copy this -->
+  <node name="maxon" pkg="maxon_epos2" type="maxon_epos2" output="screen" >
+  	<rosparam command="load" file="$(find maxon_epos2)/config/default.yaml" />
+  	<!-- <param name="SerialNumber" type="str" value="xxx" /> -->
+  </node>
+  
+</launch>
